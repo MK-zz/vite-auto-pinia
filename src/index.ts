@@ -1,5 +1,5 @@
 import { HmrContext } from "vite";
-// 配置文件
+// 配置文件 测试
 import PiniaConfig from './config'
 import generatePiniaConfig from'./generatePiniaConfig'
 import onWatcher from './watcher'
