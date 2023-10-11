@@ -18,5 +18,5 @@ jobs:
         git remote add gitee https://gitee.com/xiaotaibai123/vite-auto-pinia.git
         git push gitee main:main # 指定您的 Gitee 分支
       env:
-        GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
-        GITEE_PASSWORD: ${{ secrets.GITEE_PASSWORD }}
+        GITEE_USERNAME: 18876003215
+        GITEE_PASSWORD: wuzeyi123
