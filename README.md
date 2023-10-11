@@ -10,10 +10,10 @@
 - 你可以根据项目需求自定义模板，使状态文件满足你的特定需求。完全支持自定义。
 
 ## 智能模板
-![智能模板](http://mk.sprites.top/npm/PiniaAuto1.gif)
+![智能模板](/public/PiniaAuto1.gif)
 ## 使用效果
 **非使用 `unplugin-auto-import`用户需要 加入`import {$useStore} from '@/store'`**
-![使用效果](http://mk.sprites.top/npm/PiniaAuto2.gif)
+![使用效果](/public/PiniaAuto2.gif)
 ## 安装
 
 您可以使用 npm 或 yarn 安装 `vite-auto-pinia` 插件：
