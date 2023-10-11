@@ -7,7 +7,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@master
 
     - name: Set up Git credentials
       run: |
@@ -16,7 +16,7 @@ jobs:
       shell: bash
     - name: Convert shallow clone to deep clone
       run: git fetch --depth=1000 # 从远程获取深度为1000的历史记录
-      
+
     - name: Sync to Gitee
       run: |
         git remote add gitee https://18876003215:wuzeyi123@gitee.com/xiaotaibai123/vite-auto-pinia.git
