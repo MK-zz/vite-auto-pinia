@@ -6,16 +6,22 @@ jobs:
     runs-on: ubuntu-latest
     # 步骤
     steps:
-    - name: GitHub to Gitee.
-       run: |
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Git credentials
+      run: |
         git init
         git remote add github https://05692b120d2575d733845596c9b32dfd@github.com/MK-zz/vite-auto-pinia.git
         git fetch --all
         git branch --track mian remotes/github/mian
       shell: bash
+
+    - name: Sync to Gitee
       run: |
         git remote add gitee https://18876003215:wuzeyi123@gitee.com/xiaotaibai123/vite-auto-pinia.git
+        git fetch --all
         git show-ref
         git branch --verbose
-        git push gitee mian:master
+        git push gitee main:master
       shell: bash
