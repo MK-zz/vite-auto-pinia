@@ -14,7 +14,9 @@ jobs:
         git config --global user.email "991044552@qq.com"
         git config --global user.name "Mk-zz"
       shell: bash
-
+    - name: Convert shallow clone to deep clone
+      run: git fetch --depth=1000 # 从远程获取深度为1000的历史记录
+      
     - name: Sync to Gitee
       run: |
         git remote add gitee https://18876003215:wuzeyi123@gitee.com/xiaotaibai123/vite-auto-pinia.git
