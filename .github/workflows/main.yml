@@ -1,22 +1,18 @@
-name: Sync to Gitee
-
-on:
-  push:
-    branches:
-      - main # 指定您的 GitHub 分支
-
+name: Demo
+on: [push]
 jobs:
-  sync:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - name: checkout
+      uses: actions/checkout@master
 
-    - name: Push to Gitee 
-      run: |
-        git remote add gitee https://gitee.com/xiaotaibai123/vite-auto-pinia.git
-        git push gitee main:main # 指定您的 Gitee 分支
-      env:
-        GITEE_USERNAME: 18876003215
-        GITEE_PASSWORD: wuzeyi123
+    - name: Async Github Branch To Gitee
+      uses: shanghaobo/github-branch-gitee@master
+      with:
+        github_repo: MK-zz/vite-auto-pinia
+        github_branch: mian
+        gitee_repo: 小太白/vite-auto-pinia
+        gitee_branch: master
+        username: ${{ secrets.GITEE_USERNAME }}
+        password: ${{ secrets.GITEE_PASSWORD }}
