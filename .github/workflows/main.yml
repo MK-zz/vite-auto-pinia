@@ -8,7 +8,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: Async Github Branch To Gitee
-      uses: MK-zz/vite-auto-pinia
+      uses: shanghaobo/github-branch-gitee@v1
       with:
         github_repo: MK-zz/vite-auto-pinia
         github_branch: mian
