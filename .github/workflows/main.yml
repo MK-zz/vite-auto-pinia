@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
           node-version: 16
 
@@ -20,6 +23,5 @@ jobs:
           git remote add gitee git@gitee.com:xiaotaibai123/vite-auto-pinia.git
           git push gitee HEAD:master
         env:
-          GITEE_REPO_URL: ${{ secrets.GITEE_PRIVATE_KEY}}
+          GITEE_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY}}
           GITEE_BRANCH: master  # 可以根据你的需要指定分支
-
