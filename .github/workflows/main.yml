@@ -1,0 +1,23 @@
+name: Sync to Gitee
+
+on:
+  push:
+    branches:
+      - main  # 可以根据你的需要指定分支
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Push to Gitee
+        run: |
+          git remote add gitee git@gitee.com:xiaotaibai123/vite-auto-pinia.git
+          git push gitee HEAD:master
+        env:
+          GITEE_REPO_URL: ${{ secrets.GITEE_REPO_URL }}
+          GITEE_BRANCH: master  # 可以根据你的需要指定分支
+
