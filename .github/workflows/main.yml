@@ -13,7 +13,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Push to Gitee
+    - name: Push to Gitee 
       run: |
         git remote add gitee https://gitee.com/xiaotaibai123/vite-auto-pinia.git
         git push gitee main:main # 指定您的 Gitee 分支
