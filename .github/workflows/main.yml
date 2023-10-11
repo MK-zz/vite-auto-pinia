@@ -1,18 +1,16 @@
-name: Demo
+name: GitHub Auto To Gitee
 on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@master
-
-    - name: Async Github Branch To Gitee
-      uses: shanghaobo/github-branch-gitee@v1
+    - name: Mirror the Github organization repos to Gitee.
+      uses: Yikun/hub-mirror-action@master
       with:
-        github_repo: MK-zz/vite-auto-pinia
-        github_branch: mian
-        gitee_repo: 小太白/vite-auto-pinia
-        gitee_branch: master
-        username: ${{ secrets.GITEE_USERNAME }}
-        password: ${{ secrets.GITEE_PASSWORD }}
+        src: github/MK-zz
+        dst: gitee/@xiaotaibai123
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token: ${{ secrets.GITEE_TOKEN }}
+        account_type: user
+        # src_account_type: org
+        # dst_account_type: org
