@@ -18,6 +18,6 @@ jobs:
           git remote add gitee git@gitee.com:xiaotaibai123/vite-auto-pinia.git
           git push gitee HEAD:master
         env:
-          GITEE_REPO_URL: ${{ secrets.GITEE_REPO_URL }}
+          GITEE_REPO_URL: ${{ secrets.GITEE_PRIVATE_KEY}}
           GITEE_BRANCH: master  # 可以根据你的需要指定分支
 
