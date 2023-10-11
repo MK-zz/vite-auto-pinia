@@ -1,0 +1,13 @@
+//<%-name %>
+export default defineStore({
+    id: '<%-name %>',
+    state: () => {
+        return {}
+    },
+    actions:{},
+    persist: {
+        key: '<%-name %>Key',
+        storage: window.localStorage,
+        paths: []
+    }
+})
