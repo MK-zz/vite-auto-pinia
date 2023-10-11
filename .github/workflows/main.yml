@@ -14,7 +14,7 @@ jobs:
         git init
         git remote add github https://05692b120d2575d733845596c9b32dfd@github.com/MK-zz/vite-auto-pinia.git
         git fetch --all
-        git branch --track mian remotes/github/mian
+        git branch --track main remotes/github/main
       shell: bash
 
     - name: Sync to Gitee
