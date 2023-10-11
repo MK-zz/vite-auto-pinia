@@ -19,7 +19,7 @@ jobs:
           node-version: 16
 
       - name: Push to Gitee
-        run: |
+        run: | 
           git remote add gitee git@gitee.com:xiaotaibai123/vite-auto-pinia.git
           git push gitee HEAD:master
         env:
