@@ -19,7 +19,7 @@ jobs:
 
     - name: Sync to Gitee
       run: |
-        git remote add gitee https://18876003215:wuzeyi123@gitee.com/xiaotaibai123/vite-auto-pinia.git
+        git remote add gitee https://${{secrets.GITEE_USERNAME}}:${{secrets.GITEE_PASSWORD}}@gitee.com/xiaotaibai123/vite-auto-pinia.git
         git fetch --all
         git show-ref
         git branch --verbose
