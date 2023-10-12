@@ -1,6 +1,6 @@
 {
   "name": "vite-auto-pinia",
-  "version": "0.0.6",
+  "version": "0.0.9",
   "description": "Automatically generates the pinia file and the entry configuration.",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -14,8 +14,21 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
   "license": "ISC",
+  "homepage": "https://github.com/MK-zz/vite-auto-pinia#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MK-zz/vite-auto-pinia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MK-zz/vite-auto-pinia/issues"
+  },
+  "keywords": [
+    "vite",
+    "transform",
+    "pinia",
+    "auto"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
