@@ -10,10 +10,11 @@
 - 你可以根据项目需求自定义模板，使状态文件满足你的特定需求。完全支持自定义。
 
 ## 智能模板
-![智能模板](/public/PiniaAuto1.gif)
+
+![智能模板](https://gitee.com/xiaotaibai123/vite-auto-pinia/raw/master/public/PiniaAuto1.gif)
 ## 使用效果
 **非使用 `unplugin-auto-import`用户需要 加入`import {$useStore} from '@/store'`**
-![使用效果](/public/PiniaAuto2.gif)
+![使用效果](https://gitee.com/xiaotaibai123/vite-auto-pinia/raw/master/public/PiniaAuto2.gif)
 ## 安装
 
 您可以使用 npm 或 yarn 安装 `vite-auto-pinia` 插件：
@@ -59,7 +60,7 @@ export default defineConfig({
     //入口文件 可以通过 unplugin-auto-import 插件简化
     import {$useStore} from '@/store'
     //根据需求调用指定pinia文件
-    const { name } = $useStore('user')
+    const { name,onMK } = $useStore('user')
   </script>
   ```
 **这个插件不仅让状态管理变得更容易，还能提高开发速度和可维护性。无需手动干预，`vite-auto-pinia` 会在后台为你处理状态管理，让你专注于构建出色的 Vue 3 应用。快速、智能、高度可定制化，它将成为你的项目开发中不可或缺的助手。**
