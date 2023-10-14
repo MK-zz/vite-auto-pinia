@@ -34,13 +34,13 @@ To use the `vite-auto-pinia` plugin in your Vite project, follow these steps:
 **Configure the plugin in**  `vite.config.ts`
 ``` typescript
 import { defineConfig } from 'vite';
-import PiniaAuto from 'vite-auto-pinia';
+import AutoPinia from 'vite-auto-pinia';
 
 export default defineConfig({
   // ... Other Vite configuration options
   plugins: [
     // Default watches the store folder
-    PiniaAuto(),
+    AutoPinia(),
   ],
 });
 ```

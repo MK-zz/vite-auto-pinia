@@ -32,13 +32,13 @@ yarn add vite-auto-pinia --dev
 **配置插件**  `vite.config.ts`
 ``` typescript
 import { defineConfig } from 'vite';
-import PiniaAuto from 'vite-auto-pinia';
+import AutoPinia from 'vite-auto-pinia';
 
 export default defineConfig({
   // ... 其他 Vite 配置选项
   plugins: [
     // 默认监听store文件夹
-    PiniaAuto(),
+    AutoPinia(),
   ],
 });
 ```
