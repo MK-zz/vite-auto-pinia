@@ -22,7 +22,7 @@
 You can install the `vite-auto-pinia` plugin using npm or yarn:
 
 ```bash
-npm install vite-auto-pinia--save-dev
+npm install vite-auto-pinia -D
 # 或
 yarn add vite-auto-pinia --dev
 ```

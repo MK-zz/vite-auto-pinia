@@ -20,7 +20,7 @@
 您可以使用 npm 或 yarn 安装 `vite-auto-pinia` 插件：
 
 ```bash
-npm install vite-auto-pinia--save-dev
+npm install vite-auto-pinia -D
 # 或
 yarn add vite-auto-pinia --dev
 ```
